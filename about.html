@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">    
+<html lang="en">
 
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Reusable NavBar Component</title>
+        <title>About | Reusable NavBar Template</title>
         <script src="https://cdn.tailwindcss.com"></script>
     </head>
 
-    <body class="bg-gray-200">  
+ <body class="bg-gray-200">  
 
         <!-- Nav bar-->
 
@@ -23,7 +23,7 @@
              <!-- Navigation links with container horizontal spacing-->
 
             <div class="flex space-x-6 text-sm">
-                <a href="#" class="text-gray-800 hover:underline">Home</a>
+                <a href="index.html" class="text-gray-800 hover:underline">Home</a>
 
 
                 <!--Dropdown menu-->
@@ -64,32 +64,53 @@
                     </div>
                 </div>
 
-                     <a href="about.html" class="text-gray-800 hover:underline">About</a>
+                     <a href="#" class="text-gray-800 hover:underline">About</a>
 
                 </div>
             </div>
         </nav>
 
 
-        <!-- Hero section -->
-        <section class="relative pt-20 transition-all duration-500 peer-has-[:hover]/menu:blur-md peer-has-[:hover]/menu:opacity-60">
 
-            <div class="flex justify-center items-center text-black">
-                <img src="images/enguinuity_laptop_cover_v3.png" alt="Hero Image" class="w-1/2 mt-10">
+        <!-- About content -->
+        <section class="relative pt-24 transition-all duration-500 peer-has-[:hover]/menu:blur-md peer-has-[:hover]/menu:opacity-60">
+            <div class="container mx-auto px-4 py-12">
+                <div class="max-w-4xl mx-auto">
+                    <p class="text-sm uppercase tracking-widest text-gray-500">About</p>
+                    <h1 class="text-3xl md:text-4xl font-semibold text-gray-900 mt-2">Reusable Apple-Style Nav Bar Template</h1>
+                    <p class="text-gray-600 mt-4 leading-relaxed">
+                        This template showcases a clean, frosted-glass navigation experience inspired by Apple’s minimalist design.
+                        It’s built with Tailwind CSS utilities for fast customization and reuse across projects.
+                    </p>
+
+                    <div class="grid md:grid-cols-3 gap-6 mt-10">
+                        <div class="bg-white/70 backdrop-blur-sm rounded-xl p-6 shadow-sm">
+                            <h3 class="font-semibold text-gray-900">Reusable Structure</h3>
+                            <p class="text-sm text-gray-600 mt-2">Drop the nav into any page and keep consistent spacing, typography, and effects.</p>
+                        </div>
+                        <div class="bg-white/70 backdrop-blur-sm rounded-xl p-6 shadow-sm">
+                            <h3 class="font-semibold text-gray-900">Mega Menu</h3>
+                            <p class="text-sm text-gray-600 mt-2">A full-width dropdown for structured navigation and clear category grouping.</p>
+                        </div>
+                        <div class="bg-white/70 backdrop-blur-sm rounded-xl p-6 shadow-sm">
+                            <h3 class="font-semibold text-gray-900">Focus Effects</h3>
+                            <p class="text-sm text-gray-600 mt-2">Content blurs and dims on hover, bringing attention to the menu.</p>
+                        </div>
+                    </div>
+
+                    <div class="mt-12 bg-white/70 backdrop-blur-sm rounded-xl p-6 shadow-sm">
+                        <h2 class="text-xl font-semibold text-gray-900">Template Guidance</h2>
+                        <ul class="list-disc list-inside text-gray-600 mt-3 space-y-2">
+                            <li>Replace the logo text with your brand name or SVG.</li>
+                            <li>Update menu labels, descriptions, and links for your site.</li>
+                            <li>Adjust opacity, blur, and spacing with Tailwind classes.</li>
+                            <li>Extend sections below with your own content blocks.</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-
-            <!--Scroll content-->
-            <div class="h-[1000px] p-10">
-                <P>This content will blur when you hover over the nav menu (Solutions)</P>
-            </div>
-
-
         </section>
 
-
-
     </body>
-        
 
-        
 </html>

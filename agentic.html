@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Agentic | Reusable NavBar Template</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+
+    <body class="bg-gray-200">
+
+        <!-- Nav bar -->
+        <nav class="bg-white p-4 fixed top-0 left-0 right-0 z-10 bg-opacity-10 backdrop-blur-sm peer/menu">
+            <div class="container mx-auto flex justify-center items-center">
+                <a href="index.html" class="text-black pr-4">QE Solutions logo</a>
+
+                <div class="flex space-x-6 text-sm">
+                    <a href="index.html" class="text-gray-800 hover:underline">Home</a>
+
+                    <!--Dropdown menu-->
+                    <div class="relative group/submenu pb-4 -mb-4">
+                        <a href="#" class="text-gray-800 hover:underline hover-text-gray-500">Solutions</a>
+
+                        <div class="fixed left-0 right-0 top-14 hidden group-hover/submenu:block bg-white shadow-lg z-50 pointer-events-auto">
+                            <div class="container mx-auto px-4 py-8">
+                                <div class="grid grid-cols-4 gap-6 max-w-4xl mx-auto">
+                                    <a href="performance.html" class="text-gray-800 hover:bg-gray-100 p-4 rounded-lg">
+                                        <div class="font-semibold mb-1">Performance</div>
+                                        <div class="text-xs text-gray-600">Optimize your Workflow</div>
+                                    </a>
+
+                                    <a href="automation.html" class="text-gray-800 hover:bg-gray-100 p-4 rounded-lg">
+                                        <div class="font-semibold mb-1">Automation</div>
+                                        <div class="text-xs text-gray-600">Streamline Processes</div>
+                                    </a>
+
+                                    <a href="agentic.html" class="text-gray-800 hover:bg-gray-100 p-4 rounded-lg bg-gray-50">
+                                        <div class="font-semibold mb-1">Agentic</div>
+                                        <div class="text-xs text-gray-600">AI-powered Solutions</div>
+                                    </a>
+
+                                    <a href="innovation.html" class="text-gray-800 hover:bg-gray-100 p-4 rounded-lg">
+                                        <div class="font-semibold mb-1">Innovation</div>
+                                        <div class="text-xs text-gray-600">Future-ready Tech</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="about.html" class="text-gray-800 hover:underline">About</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Page content -->
+        <section class="relative pt-24 transition-all duration-500 peer-has-[:hover]/menu:blur-md peer-has-[:hover]/menu:opacity-60">
+            <div class="container mx-auto px-4 py-12">
+                <div class="max-w-4xl mx-auto">
+                    <p class="text-sm uppercase tracking-widest text-gray-500">Solutions</p>
+                    <h1 class="text-3xl md:text-4xl font-semibold text-gray-900 mt-2">Agentic</h1>
+                    <p class="text-gray-600 mt-4 leading-relaxed">
+                        Harness AI-powered solutions that work autonomously. This template page is ready for your content.
+                    </p>
+
+                    <div class="grid md:grid-cols-2 gap-6 mt-10">
+                        <div class="bg-white/70 backdrop-blur-sm rounded-xl p-6 shadow-sm">
+                            <h3 class="font-semibold text-gray-900">Task Assistants</h3>
+                            <p class="text-sm text-gray-600 mt-2">AI agents that handle complex tasks with minimal human oversight.</p>
+                        </div>
+                        <div class="bg-white/70 backdrop-blur-sm rounded-xl p-6 shadow-sm">
+                            <h3 class="font-semibold text-gray-900">Knowledge Search</h3>
+                            <p class="text-sm text-gray-600 mt-2">Intelligent search that understands context and delivers precise answers.</p>
+                        </div>
+                        <div class="bg-white/70 backdrop-blur-sm rounded-xl p-6 shadow-sm">
+                            <h3 class="font-semibold text-gray-900">Auto Triage</h3>
+                            <p class="text-sm text-gray-600 mt-2">Automatically categorize and prioritize incoming requests and issues.</p>
+                        </div>
+                        <div class="bg-white/70 backdrop-blur-sm rounded-xl p-6 shadow-sm">
+                            <h3 class="font-semibold text-gray-900">Smart Routing</h3>
+                            <p class="text-sm text-gray-600 mt-2">Direct tasks and queries to the right team or system automatically.</p>
+                        </div>
+                    </div>
+
+                    <div class="mt-12 bg-white/70 backdrop-blur-sm rounded-xl p-6 shadow-sm">
+                        <h2 class="text-xl font-semibold text-gray-900">Get Started</h2>
+                        <p class="text-gray-600 mt-3">
+                            Replace this content with your own agentic AI services, case studies, or call-to-action.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </body>
+
+</html>
