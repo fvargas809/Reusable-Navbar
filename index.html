@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">    
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Reusable NavBar Component</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+
+    <body class="bg-gray-200">  
+
+        <!-- Nav bar-->
+
+        <!-- Main nav bar with white background and padding -->
+        <nav class="bg-white p-4 fixed top-0 left-0 right-0 z-10 bg-opacity-10 backdrop-blur-sm peer/menu">
+                
+            
+            <!-- container that uses flexbox for layour and centers content -->
+            <div class="container mx-auto flex justify-center items-center">
+                <a href="#" class="text-black pr-4">QE Solutions logo</a>
+            
+             <!-- Navigation links with container horizontal spacing-->
+
+            <div class="flex space-x-6 text-sm">
+                <a href="#" class="text-gray-800 hover:underline">Home</a>
+
+
+                <!--Dropdown menu-->
+                <div class="relative group/submenu">
+                    <a href="#" class="text-gray-800 hover:underline hover-text-gray-500">Solutions</a>
+
+                    <div class="fixed left-0 right-0 top-15 hidden group-hover/submenu:block bg-white shadow-lg z-50 mt-5">
+
+                        <!--Inner Container-->
+
+                        <div class="container mx-auto px-4 py-8">
+                            <!--Grid layout-->
+
+                            <div class="grid grid-cols-4 gap-6 max-w-4xl mx-auto">
+                                <!--submenus-->
+                                <a href="#" class="text-gray-800 hover:bg-gray-100 p-4 rounded-lg">
+                                    <div class="font-semibold mb-1">Performance</div>
+                                    <div class="text-xs text-gray-600">Optimize your Workflow</div>
+                                </a>
+
+                                <a href="#" class="text-gray-800 hover:bg-gray-100 p-4 rounded-lg">
+                                    <div class="font-semibold mb-1">Automation</div>
+                                    <div class="text-xs text-gray-600">Streamine Processes</div>
+                                </a>
+
+                                <a href="#" class="text-gray-800 hover:bg-gray-100 p-4 rounded-lg">
+                                    <div class="font-semibold mb-1">Agentic</div>
+                                    <div class="text-xs text-gray-600">AI-powered Solutions</div>
+                                </a>
+
+                                <a href="#" class="text-gray-800 hover:bg-gray-100 p-4 rounded-lg">
+                                    <div class="font-semibold mb-1">Innovation</div>
+                                    <div class="text-xs text-gray-600">Future-ready Tech</div>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                     <a href="#" class="text-gray-800 hover:underline">Contact</a>
+
+                </div>
+            </div>
+        </nav>
+
+
+        <!-- Hero section -->
+        <section class="relative pt-20 transition-all duration-500 peer-has-[:hover]/menu:blur-md peer-has-[:hover]/menu:opacity-60">
+
+            <div class="flex justify-center items-center text-black">
+                <img src="images/enguinuity_laptop_cover_v3.png" alt="Hero Image" class="w-1/2 mt-10">
+            </div>
+
+            <!--Scroll content-->
+            <div class="h-[1000px] p-10">
+                <P>This content will blur when you hover over the nav menu (Solutions)</P>
+            </div>
+
+
+        </section>
+
+
+
+    </body>
+        
+
+        
+</html>
